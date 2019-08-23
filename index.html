@@ -27,6 +27,92 @@
 	<!-- <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'> -->
 	<link rel="stylesheet/less" href="cake.less">
 	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
+	<style>
+	@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan');
+* {padding: 0; margin: 0;}
+body {
+    font-family: 'Baloo Bhaijaan', cursive;
+    color: #0984e3;
+      background-color:#f5f6fa;
+}
+
+.text {
+    font-size: 95px;
+    padding: 0 35px;
+    float: left;
+    margin-top: 20px;
+}
+
+.dumet {
+    background-color: #0984e3;
+    color: #f5f6fa;
+    border-radius: 0 85px 85px 0;
+}
+
+.school {
+    color: #0984e3;
+}
+
+.text {
+    animation-name: slide;
+    animation-duration: 4s;
+}
+
+@-webkit-keyframes slide {
+    0% { opacity: 0; margin-left: -250px; }
+    100% { opacity: 1; margin-left: 0; }
+}
+
+@keyframes slide {
+    0% { opacity: 0; margin-left: -250px; }
+    100% { opacity: 1; margin-left: 0; }
+}
+	body{
+		background-color: #f1c40f;
+		-webkit-animation: color 5s ease-in  0s infinite alternate running;
+		-moz-animation: color 5s linear  0s infinite alternate running;
+		animation: color 5s linear  0s infinite alternate running;
+	}
+	/* Animasi + Prefix untuk browser */
+	@-webkit-keyframes color {
+	    0% { background-color: #f1c40f; }
+	    32% { background-color: #e74c3c; }
+	    55% { background-color: #9b59b6; }
+	    76% { background-color: #16a085; }
+	    100% { background-color: #2ecc71; }
+	}
+	@-moz-keyframes color {
+	     0% { background-color: #f1c40f; }
+	    32% { background-color: #e74c3c; }
+	    55% { background-color: #9b59b6; }
+	    76% { background-color: #16a085; }
+	    100% { background-color: #2ecc71; }
+	}
+	@keyframes color {
+	  0% { background-color: #f1c40f; }
+	    32% { background-color: #e74c3c; }
+	    55% { background-color: #9b59b6; }
+	    76% { background-color: #16a085; }
+	    100% { background-color: #2ecc71; }
+	}
+	h1{
+	   margin: 0;
+	        text-transform: uppercase;
+	                font-family: 'halvetica', sans-serif;
+	                color: #ecf0f1;
+	                font-size: 30pt;
+	                text-align: center;
+	                line-height: 350px;
+	               letter-spacing: 0.2em
+	}
+	p{
+		text-align: center;
+	}
+	a{
+		text-decoration: none;
+		color: #333;
+	}
+	</style>
 </head>
 
 <body>
@@ -100,6 +186,7 @@
 				  </div>
 				  <div class="cobertura"></div>
 				  <div class="bizcocho"></div>
+				  <button class="btn btn-primary" id="Chat">Ucapkan Selamat</button>
 				</div>
 			</div>
 		</div>
@@ -155,14 +242,15 @@
 				<p>Saya ingin mengucapkan satu kali lagi</p>
 				<p>Selamat ulang tahun</p>
 				<p>17-September-2019</p>
-				<p>................</p>
 				<p>Naomi Tessania</p>
+				<p>Terima Kasih</p>
 			</div>
 		</div>
 		
 		<div class="navbar navbar-fixed-bottom">
 			<div class="row">
 				<div class="col-md-6 text-center col-md-offset-3">
+					
 					<button class="btn btn-primary" id="turn_on">Nyalakan Lampu Tessa</button>
 					<button class="btn btn-primary" id="play">Mainkan Musik Tessa</button>
 					<button class="btn btn-primary" id="bannar_coming">Kita Kasih Hiasan Tessa</button>
@@ -171,6 +259,7 @@
 					<button class="btn btn-primary" id="light_candle"> Nyalakan Lilinnya Tessa</button>
 					<button class="btn btn-primary" id="wish_message">Selamat Ulang Tahun Tessa</button>
 					<button class="btn btn-primary" id="story">Pesannya di Baca ya Tessa</button>
+					
 				</div>
 			</div>
 			<!-- <div class="col-md-2">
@@ -185,6 +274,8 @@
 			</div> -->
 		</div>
 	</div>
+    <span class="text dumet">Naomi</span>
+    <span class="text school">Tessania</span>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 <script src="effect.js"></script>
@@ -197,6 +288,7 @@
   ga('create', 'UA-58229732-1', 'auto');
   ga('send', 'pageview');
 </script>
+<h1>Selamat Ulang Tahun</h1>
 <script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/daun-berguguran.js" type="text/javascript"></script>
 <script type="text/javascript" src="http://naughtyric.googlecode.com/files/jrRain.js"></script>
 <script src='http://wadah-tutorial.googlecode.com/files/hearts.js' type='text/javascript'/></script>
